@@ -87,6 +87,7 @@
         .card p {
             margin-top: 10px;
             font-weight: bold;
+            text-decoration: none;
         }
 
         @media (max-width: 768px) {
