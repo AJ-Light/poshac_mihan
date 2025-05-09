@@ -159,17 +159,30 @@ border-radius: 5px;
 }
 
 @media (max-width: 700px) {
-.title h1{font-size:22px;}
-.title h2 h3{font-size: 16px;}
+.title h1{
+  
+  font-size:22px;
 
-#logo{width: 50%;}
+}
+.title h2 h3{
+  
+  font-size: 16px;
+            
+            }
+
+#logo{
+  width:100px;
+  height:100px;
+}
 
   
-.clo{margin: 20px;
+.clo{
+  margin: 20px;
     padding: 20px;
     }
 
-.co img{width:100px;
+.co img{
+  width:100px;
        height:100px;
        }
   
