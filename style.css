@@ -8,6 +8,7 @@ body{
 background-color: rgb(235, 235, 235);
 font-family:'my fonts';
 direction: rtl;
+width: 100%;
 }
 
 h1{
@@ -20,7 +21,7 @@ padding: 10px;
 
 
 h2{
-
+  margin-top:100px;
     background-color: #ff6dda;
     color: rgb(22, 23, 24);
     margin: 0%;
@@ -42,6 +43,31 @@ font-size: 1.5em;
 border-radius: 20px;
 padding: 10px;
 }
+
+footer{
+font-size: 2em;
+text-align: center;
+padding: 20px;
+margin: 20px;
+background-color: #1f1f1f;
+color: #007070;
+background-image: url('Dress.Images/logo4.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+
+
+footer a{
+  color: #007070;
+float: right;
+display: block;
+
+
+}
+
 
 .title{
  
@@ -66,11 +92,9 @@ text-decoration: none;
 
 
 .clo{
-    display: flex;
-    overflow: auto;
-    gap: 10px;
-    scroll-behavior: smooth;
-
+ display: block;
+margin: 50px;
+padding: 50px;
 }
 
 .clo img{
@@ -78,7 +102,7 @@ width: 300px;
 height: 300px;
 padding: 5px;
 border-radius: 10px;
-flex-shrink: 0;
+
 
 }
 
@@ -134,13 +158,20 @@ font-size: 17px;
 border-radius: 5px;
 }
 
-@media screen and (max-width: 700px){
+@media (max-width: 750px) {
+.title h1{font-size:22px;}
+.title h2 h3{font-size: 16px;}
+
+#logo{width: auto;}
 
   
-}
+.clo{margin: 20px;
+    padding: 20px;
+    }
 
-
-
-
+.co img{width:100px;
+       height:100px;
+       }
+  
   
 }
