@@ -51,7 +51,7 @@ padding: 20px;
 margin: 20px;
 background-color: #1f1f1f;
 color: #007070;
-background-image: url('Dress.Images/logo4.jpg');
+background-image: url('Dress\ Images/logo4.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
