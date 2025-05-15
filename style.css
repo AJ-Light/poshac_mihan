@@ -1,19 +1,23 @@
-*{
-margin: 0;
-padding: 0;
-  
+*
+{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+width: 100%;
 }
 
+
+
 body{
-background-color: rgb(235, 235, 235);
+background-color: rgb(33, 136, 196);
 font-family:'my fonts';
 direction: rtl;
-width: 100%;
+overflow-x: hidden;
 }
 
 h1{
 
-
+font-size: 2em;
 color: rgb(22, 23, 24);
 margin-top: 0%;
 padding: 10px;
@@ -22,7 +26,7 @@ padding: 10px;
 
 h2{
   margin-top:100px;
-   
+    
     color: rgb(22, 23, 24);
     margin: 0%;
     padding: 10px;
@@ -30,42 +34,38 @@ h2{
   
 h3{
 
-  color: rgb(22, 23, 24);
- padding: 10px;
+color: rgb(22, 23, 24);
+padding: 10px;
 font-size: 1.4em;
 }
 
-.card{
-border: 1px solid black;
-display: flow-root;
-text-align: center;
-font-size: 1.5em;
-border-radius: 20px;
-padding: 10px;
+
+img{
+  max-width: 100%;
 }
 
 footer{
 font-size: 2em;
 text-align: center;
-padding: 20px;
-margin: 20px;
+
+
 background-color: #1f1f1f;
 color: #007070;
-background-image: url('Dress\ Images/logo4.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+
+}
+
+#logo4 {
+width: 100%;
+
 }
 
 
-
-
 footer a{
-  color: #007070;
+color: #007070;
 float: right;
 display: block;
-
-
+padding: 20px;
+font-size: 2em;
 }
 
 
@@ -88,18 +88,27 @@ text-decoration: none;
 }
 
 
+.card{
 
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  }
 
 
 .clo{
- display: block;
-margin: 50px;
-padding: 50px;
+
+padding: 20px;
+
 }
 
 .clo img{
-width: 300px;
-height: 300px;
+width: 40vw;
+height: auto;
 padding: 5px;
 border-radius: 10px;
 
@@ -115,6 +124,7 @@ border-radius: 10px;
 width: 100%;
 height: auto;
 margin-bottom: 0%;
+max-width: 100%;
 }
 
 @font-face{
@@ -125,6 +135,8 @@ margin-bottom: 0%;
 .topnav{
 background-color: #1f1f1f;
   overflow: hidden;
+  max-width: 100%;
+
 }
 
 .topnav a{
@@ -158,33 +170,66 @@ font-size: 17px;
 border-radius: 5px;
 }
 
-@media (max-width: 700px) {
-.title h1{
-  
-  font-size:22px;
+@media screen and (min-width:501px) and (max-width: 900px) and (orientation: landscape){
+
+body{
+width: 100%;
+background-color: rgb(33, 136, 196);}
 
 }
-.title h2 h3{
-  
-  font-size: 16px;
-            
-            }
 
-#logo{
-  width:100px;
-  height:100px;
+
+#logo4{
+width: 100%;
+
 }
 
-  
-.clo{
-  margin: 20px;
-    padding: 20px;
+footer{
+
+font-size: 1em;
+
+}
+h1{
+
+  font-size: 6vw;
+}
+
+
+
+@media screen and (min-width:100px) and (max-width: 500px) and (orientation: portrait){
+
+  body{
+  width: 100%;
+  background-color: rgb(33, 136, 196);}
+
+
+  #logo4{
+   max-width: 100%;
+    
+    }
+    
+    footer{
+    margin: 0%;
+    font-size: 1em;
+    max-width: 100%;
+    }
+    h1{
+    
+      font-size: 5vw;
     }
 
-.co img{
-  width:100px;
-       height:100px;
-       }
-  
-  
+    .card{
+max-width: 100%;
+
+    }
+
+    .clo{
+max-width: 100%;
+
+    }
+
+footer {
+font-size: 4vw;
 }
+
+  }
